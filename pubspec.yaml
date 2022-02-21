@@ -21,6 +21,8 @@ dependencies:
     sdk: flutter
   # bruno: ^2.0.0
   flutter_neumorphic: ^3.0.3
+  getwidget: ^2.0.4
+
 
 dev_dependencies:
   flutter_test:

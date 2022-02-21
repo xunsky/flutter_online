@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:bruno/bruno.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
+import 'package:getwidget/getwidget.dart';
 
 void main() => runApp(MyApp());
 
@@ -58,6 +59,10 @@ class MyHomePage extends StatelessWidget {
               fontSize: 18, //customize size here
               // AND others usual text style properties (fontFamily, fontWeight, ...)
             ),
+          ),
+          GFRating(
+            value: 3,
+            onChanged: (value) {},
           ),
         ],
       )),
