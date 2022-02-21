@@ -20,6 +20,7 @@ dependencies:
   flutter:
     sdk: flutter
   # bruno: ^2.0.0
+  flutter_neumorphic: ^3.0.3
 
 dev_dependencies:
   flutter_test:

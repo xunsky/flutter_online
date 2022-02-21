@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 // import 'package:bruno/bruno.dart';
+import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 void main() => runApp(MyApp());
 
@@ -43,9 +44,20 @@ class MyHomePage extends StatelessWidget {
           //   text: 'I am first bubble text',
           // ),
           Text(
-            "Hello world! I'm Jack. " * 4,
+            "Hello world! I'm Jack. " * 2,
             maxLines: 1,
             overflow: TextOverflow.fade,
+          ),
+          NeumorphicText(
+            "I love flutter",
+            style: NeumorphicStyle(
+              depth: 4, //customize depth here
+              color: Colors.white, //customize color here
+            ),
+            textStyle: NeumorphicTextStyle(
+              fontSize: 18, //customize size here
+              // AND others usual text style properties (fontFamily, fontWeight, ...)
+            ),
           ),
         ],
       )),
