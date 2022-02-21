@@ -52,7 +52,7 @@ class MyHomePage extends StatelessWidget {
             "I love flutter",
             style: NeumorphicStyle(
               depth: 4, //customize depth here
-              color: Colors.white, //customize color here
+              color: Colors.red, //customize color here
             ),
             textStyle: NeumorphicTextStyle(
               fontSize: 18, //customize size here
