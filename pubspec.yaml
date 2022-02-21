@@ -19,6 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  bruno: ^2.0.0
 
 dev_dependencies:
   flutter_test:

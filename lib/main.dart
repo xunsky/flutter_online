@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:bruno/bruno.dart';
 
 void main() => runApp(MyApp());
 
@@ -37,6 +38,10 @@ class MyHomePage extends StatelessWidget {
           Text('2'),
           Text('3'),
           Text('45'),
+          BrnBubbleText(
+            maxLines: 3,
+            text: 'I am first bubble text',
+          ),
           Text(
             "Hello world! I'm Jack. " * 4,
             maxLines: 1,
