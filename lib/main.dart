@@ -36,6 +36,7 @@ class MyHomePage extends StatelessWidget {
           Text("1"),
           Text('2'),
           Text('3'),
+          Text('4'),
           Text(
             "Hello world! I'm Jack. " * 4,
             maxLines: 1,
