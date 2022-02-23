@@ -65,7 +65,7 @@ class MyHomePage extends StatelessWidget {
             ),
           ),
           Banner(
-            message: "ALPHA",
+            message: "AL",
             location: BannerLocation.topEnd,
             color: Colors.red,
           ),
