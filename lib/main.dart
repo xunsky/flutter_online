@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 // import 'package:bruno/bruno.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
@@ -37,7 +39,9 @@ class MyHomePage extends StatelessWidget {
           child: Column(
         children: [
           GFButton(
-            onPressed: null,
+            onPressed: () {
+              log('123');
+            },
             text: "primary",
           ),
           Text("1"),
