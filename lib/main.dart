@@ -36,6 +36,10 @@ class MyHomePage extends StatelessWidget {
       body: Center(
           child: Column(
         children: [
+          GFButton(
+            onPressed: null,
+            text: "primary",
+          ),
           Text("1"),
           Text('2'),
           Text('3'),
