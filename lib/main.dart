@@ -69,6 +69,10 @@ class MyHomePage extends StatelessWidget {
             location: BannerLocation.topEnd,
             color: Colors.red,
           ),
+          IconButton(
+            icon: Icon(Icons.favorite),
+            onPressed: () {},
+          ),
           Text(
             "Hello world! I'm Jack. " * 2,
             maxLines: 1,
