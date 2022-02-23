@@ -64,6 +64,11 @@ class MyHomePage extends StatelessWidget {
               title: Text('FlutLab is on your service!'),
             ),
           ),
+          Banner(
+            message: "ALPHA",
+            location: BannerLocation.topEnd,
+            color: Colors.red,
+          ),
           Text(
             "Hello world! I'm Jack. " * 2,
             maxLines: 1,
