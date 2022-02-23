@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'dart:developer';
 
 import 'package:flutter/material.dart';
@@ -44,8 +45,27 @@ class MyHomePage extends StatelessWidget {
             },
             text: "primary",
           ),
+          GFButton(
+              size: GFSize.LARGE,
+              text: 'View on Github',
+              textStyle: const TextStyle(
+                fontSize: 16,
+                color: GFColors.WHITE,
+              ),
+              icon: Icon(CupertinoIcons.captions_bubble),
+              color: GFColors.SUCCESS,
+              blockButton: true,
+              onPressed: () {}),
           Text("1"),
           Text('2'),
+          Card(
+            margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 5.0),
+            color: Colors.amber,
+            child: ListTile(
+              leading: FlutterLogo(),
+              title: Text('FlutLab is on your service!'),
+            ),
+          ),
           Text('3'),
           Text('45'),
           // BrnBubbleText(
