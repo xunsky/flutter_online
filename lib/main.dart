@@ -56,8 +56,6 @@ class MyHomePage extends StatelessWidget {
               color: GFColors.SUCCESS,
               blockButton: true,
               onPressed: () {}),
-          Text("1"),
-          Text('2'),
           Card(
             margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 5.0),
             color: Colors.amber,
@@ -66,12 +64,6 @@ class MyHomePage extends StatelessWidget {
               title: Text('FlutLab is on your service!'),
             ),
           ),
-          Text('3'),
-          Text('45'),
-          // BrnBubbleText(
-          //   maxLines: 3,
-          //   text: 'I am first bubble text',
-          // ),
           Text(
             "Hello world! I'm Jack. " * 2,
             maxLines: 1,
