@@ -10,18 +10,13 @@ void main() => runApp(MyApp());
 final _navigatorKey = GlobalKey<NavigatorState>();
 
 class MyApp2 extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // Application name
       title: 'Flutter Hello World',
-      // Application theme data, you can set the colors for the application as
-      // you want
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // A widget which will be started on application startup
       home: MyHomePage(),
     );
   }
@@ -34,7 +29,6 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // The title text which will be shown on the action bar
         title: Text("test3"),
       ),
       body: Center(
@@ -138,7 +132,7 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData.dark(),
       home: Scaffold(
         body: WillPopScope(
-          onWillPop: () async => !await _navigatorKey.currentState!.maybePop(),
+          onWillPop: () async => !await _navigatorKey.currentState?.maybePop() ?? false,
           child: Navigator(
             key: _navigatorKey,
             onPopPage: _onPopPage,
