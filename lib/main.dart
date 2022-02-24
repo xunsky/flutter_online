@@ -116,6 +116,13 @@ class _MyAppState extends State<MyApp> {
     ),
   ];
 
+  String? str = "123";
+
+  void tt() async {
+    int n = str?.length ?? 0;
+    bool s = await _navigatorKey.currentState?.maybePop() ?? false;
+  }
+
   void addPage(MyPage page) {
     setState(() => pages.add(page));
   }
@@ -132,7 +139,10 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData.dark(),
       home: Scaffold(
         body: WillPopScope(
-          onWillPop: () async => !await _navigatorKey.currentState?.maybePop() ?? false,
+          onWillPop: () async {
+            bool result = await _navigatorKey.currentState?.maybePop() ?? false;
+            return result;
+          },
           child: Navigator(
             key: _navigatorKey,
             onPopPage: _onPopPage,
