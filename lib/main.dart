@@ -73,11 +73,6 @@ class MyHomePage extends StatelessWidget {
             icon: Icon(Icons.favorite),
             onPressed: () {},
           ),
-          Text(
-            "Hello world! I'm Jack. " * 2,
-            maxLines: 1,
-            overflow: TextOverflow.fade,
-          ),
           NeumorphicText(
             "I love flutter",
             style: NeumorphicStyle(
